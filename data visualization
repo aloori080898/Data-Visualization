@@ -1,0 +1,103 @@
+import matplotlib.pyplot as plt
+x = [5, 6]
+y = [5, 6]
+plt.plot(x, y)
+plt.show()
+
+import matplotlib.pyplot as plt
+x = [5, 6]
+y = [5, 6]
+plt.plot(x, y, marker='*')
+plt.show()
+
+import matplotlib.pyplot as plt
+x = [5, 6, 9]
+y = [5, 6, 20]
+plt.plot(x, y, marker='*')
+plt.show()
+
+import matplotlib.pyplot as plt
+x = [5, 6, 9]
+y = [5, 6, 20]
+plt.title("Boss it is a line graph")
+plt.plot(x, y, marker='*')
+plt.show()
+
+import matplotlib.pyplot as plt
+x = [5, 6, 9]
+y = [5, 6, 20]
+plt.title("A line graph")
+plt.xlabel("X values")
+plt.ylabel("Y values")
+plt.plot(x, y, marker = '*')
+plt.show()
+
+import matplotlib.pyplot as plt
+x = [5, 6, 9]
+y = [5, 6, 20]
+p = [10, 20, 25]
+plt.title("A line graph")
+plt.xlabel("X values")
+plt.ylabel("Y values")
+plt.plot(x, y, marker = '*')
+plt.plot(x, p, marker = '*')
+plt.show()
+
+import matplotlib.pyplot as plt
+months = ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug",
+"Sep", "Oct", "Nov", "Dec"]
+sales = [23, 45, 56, 78, 213, 45, 78, 89, 99, 100, 101, 130]
+plt.title('A Bar Graph')
+plt.xlabel('Month')
+plt.ylabel('Product Sales')
+plt.bar(months, sales)
+plt.show()
+
+import matplotlib.pyplot as plt
+months = ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug",
+"Sep", "Oct", "Nov", "Dec"]
+sales = [23, 45, 56, 78, 213, 45, 78, 89, 99, 100, 101, 130]
+plt.title('A Bar Graph')
+plt.xlabel('Product Sales')
+plt.ylabel('Month')
+plt.barh(months, sales)
+plt.show()
+
+import matplotlib.pyplot as plt
+import pandas as pd
+df = pd.read_csv("sales11.csv")
+plt.title('A Bar Graph')
+plt.xlabel('Month')
+plt.ylabel('Product Sales')
+plt.bar(df.month, df.sales)
+plt.show()
+
+import matplotlib.pyplot as plt
+months = ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug",
+"Sep", "Oct", "Nov", "Dec"]
+sales = [23, 45, 56, 78, 213, 45, 78, 89, 99, 100, 101, 130]
+plt.title('A Bar Graph')
+plt.xlabel('Month')
+plt.ylabel('Product Sales')
+plt.bar(months, sales, width = 1.0)
+plt.show()
+
+import matplotlib.pyplot as plt
+months = ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug",
+"Sep", "Oct", "Nov", "Dec"]
+sales = [23, 45, 56, 78, 213, 45, 78, 89, 99, 100, 101, 130]
+plt.title('A Bar Graph')
+plt.xlabel('Month')
+plt.ylabel('Product Sales')
+plt.bar(months, sales, width = 2.0)
+plt.show()
+
+import matplotlib.pyplot as plt
+months = ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug",
+"Sep", "Oct", "Nov", "Dec"]
+sales = [23, 45, 56, 78, 213, 45, 78, 89, 99, 100, 101, 130]
+plt.title('A Bar Graph')
+plt.xlabel('Month')
+plt.ylabel('Product Sales')
+plt.bar(months, sales, width = 0.5)
+plt.show()
